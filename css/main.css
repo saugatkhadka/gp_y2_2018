@@ -1,0 +1,73 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: #ecf0f1;
+	height: 100%;
+	padding-top: 70px; /*For navigation*/
+}
+
+
+/*form code*/
+
+.wrapper {	
+	margin: auto;
+}
+
+.header-login {
+	text-align: center;
+}
+
+.header-login h1 {
+	color: #34495e;
+	font-size: 3em;
+}
+
+.form-login {
+  padding: 20px 35px 25px 35px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ced4da;  
+}
+
+.form-check {
+	padding-bottom: 10px;
+}
+
+.navbar-default .navbar-brand {
+	font-family: Segoe UI;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+	/*color: rgba(255,255,255,0.75);*/
+	font-weight: 600;
+}
+
+.dashboard {
+	border-radius: 5px;
+	background: #bdc3c7;
+	height: 940px;
+	border: 2px solid #95a5a6;
+	padding: 10px;
+	padding-top: 25px;
+	margin-bottom: 10px;
+}
+
+.content {
+	
+}
+
+#footer {
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    height: $height-footer;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer-block {
+  margin: 20px 0;
+}
