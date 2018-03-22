@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background: #ecf0f1;
+	/*background: #ecf0f1;*/
 	height: 100%;
 	padding-top: 70px; /*For navigation*/
 }
@@ -34,6 +34,9 @@ body {
 .form-check {
 	padding-bottom: 10px;
 }
+.navbar {
+	/*background: #343a40;*/
+}
 
 .navbar-default .navbar-brand {
 	font-family: Segoe UI;
@@ -45,14 +48,20 @@ body {
 	font-weight: 600;
 }
 
-.dashboard {
+.std-dashboard,
+.stf-dashboard {
 	border-radius: 5px;
-	background: #bdc3c7;
-	height: 940px;
+	/*background: #bdc3c7;*/
+	height: auto;
 	border: 2px solid #95a5a6;
 	padding: 10px;
 	padding-top: 25px;
 	margin-bottom: 10px;
+}
+
+.std-registration-form {
+	width: 50%;
+	margin:auto;
 }
 
 .content {

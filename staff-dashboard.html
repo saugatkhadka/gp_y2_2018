@@ -57,9 +57,420 @@
 
 	<!-- Main Content -->
 	<div class="container-fluid">
-		<div class="dashboard">
+		<div class="stf-dashboard">
 			
-			
+			<ul class="nav nav-tabs">
+			  <li role="presentation" class="active"><a href="#student" data-toggle="tab">Student</a></li>
+			  <li role="presentation"><a href="#management" data-toggle="tab">Management</a></li>
+			  <li role="presentation"><a href="#services" data-toggle="tab">Services</a></li>
+			  <li role="presentation"><a href="#course" data-toggle="tab">Courses</a></li>
+			  <li role="presentation"><a href="#setting" data-toggle="tab">Settings</a></li>
+			</ul>	
+
+			<div class="tab-content">
+				<!-- tab panel for student -->
+				<div class="tab-pane active" id="student">
+					<div class="page-header">
+						<h1>Students <small>CRUD</small></h1>
+					</div>
+
+
+					<ul class="nav nav-tabs nav-pills nav-justified">
+						<li role="presentation" class="active"><a href="#std-view" data-toggle="tab">View</a></li>
+						<li role="presentation"><a href="#std-create" data-toggle="tab">Create</a></li>
+						<li role="presentation"><a href="#std-update" data-toggle="tab">Update</a></li>
+					</ul>
+
+					<!-- inside students -->
+					<div class="tab-content">
+						<!-- view -->
+						<div class="tab-pane active" id="std-view">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>First Name</th>
+										<th>Last Name</th>
+										<th>Level</th>
+										<th>Course</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>001</td>
+										<td>Danny</td>
+										<td>Thapa</td>
+										<td>5</td>
+										<td>CS</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+									<tr>
+										<td>002</td>
+										<td>Fanny</td>
+										<td>Thapa</td>
+										<td>4</td>
+										<td>HR</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+									<tr>
+										<td>002</td>
+										<td>Fanny</td>
+										<td>Thapa</td>
+										<td>4</td>
+										<td>HR</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<!-- create -->
+						<div class="tab-pane" id="std-create">
+							<div class="std-registration-form">
+								<div class="page-header">
+									<h2>Students Registration Form</h2>
+									<h4><small>Please fill out the form carefully</small></h4>
+								</div>
+
+								<form>
+
+									<div class="form-group">
+										<label for="firstname">First Name</label>
+										<input type="text" class="form-control" name="firstname" id="firstname">
+									</div>
+									<div class="form-group">
+										<label for="middlename">Middle Name</label>
+										<input type="text" class="form-control" name="middlename" id="middlename">
+									</div>
+									<div class="form-group">
+										<label for="lastname">Last Name</label>
+										<input type="text" class="form-control" name="lastname" id="lastname">
+									</div>
+									<div class="form-group">
+										<label for="birthday">Birthday</label>
+										<input type="date" class="form-control" name="birthday" id="birthday">
+									</div>
+									<!-- gender -->
+									<div class="form-group">
+										<label for="gender">Gender</label>
+										<select class="form-control">
+											<option>Male</option>
+											<option>Female</option>
+											<option>Others</option>
+										</select>
+									</div>
+
+									<!-- address -->
+									<div class="form-group">
+										<label for="address">Address</label>
+										<!-- street address 1 -->
+										<input type="text" class="form-control" name="street-address" id="street-address" placeholder="Street Address">
+										<!-- street address 2 -->
+										<input type="text" class="form-control" name="street-address-2" id="street-address-2" placeholder="Street Address 2">
+										
+										<div class="row">
+											<div class="col-md-6">
+												<!-- city -->
+												<input type="text" class="form-control" name="city" id="city" placeholder="City">
+											</div>
+											<div class="col-md-6">
+												<!-- Province/State -->
+												<input type="text" class="form-control" name="province" id="province" placeholder="State/Province">
+											</div>
+										</div>
+
+										
+
+										<!-- Postal/Zip -->
+										<input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="Postal/Zip Code">
+
+									</div>
+
+									<!-- student email -->
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input type="email" class="form-control" name="email" id="email">
+									</div>
+
+									<!-- contact number -->
+									<div class="form-group">
+										<label for="contact-number">Contact Number</label>
+										<input type="text" class="form-control" name="contact-number" id="contact-number">
+									</div>
+
+									<!-- courses -->
+									<div class="form-group">
+										<label for="courses">Courses</label>
+										<input type="text" class="form-control" name="courses" id="courses">
+									</div>
+
+									<!-- additional comments -->
+									<div class="form-group">
+										<label for="additional-comments">Additional Comments</label>
+										<input type="text" class="form-control" name="additional-comments" id="additional-comments">
+									</div>
+
+									<button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+
+							</div>
+						</div>
+
+						<!-- update -->
+						<div class="tab-pane" id="std-update">
+							<div class="std-registration-form">
+								<div class="page-header">
+									<h2>Students Update Form</h2>
+									<h4><small>Please fill out the form carefully</small></h4>
+								</div>
+
+								<form>
+
+									<div class="form-group">
+										<label for="firstname">First Name</label>
+										<input type="text" class="form-control" name="firstname" id="firstname">
+									</div>
+									<div class="form-group">
+										<label for="middlename">Middle Name</label>
+										<input type="text" class="form-control" name="middlename" id="middlename">
+									</div>
+									<div class="form-group">
+										<label for="lastname">Last Name</label>
+										<input type="text" class="form-control" name="lastname" id="lastname">
+									</div>
+									<div class="form-group">
+										<label for="birthday">Birthday</label>
+										<input type="date" class="form-control" name="birthday" id="birthday">
+									</div>
+									<!-- gender -->
+									<div class="form-group">
+										<label for="gender">Gender</label>
+										<select class="form-control">
+											<option>Male</option>
+											<option>Female</option>
+											<option>Others</option>
+										</select>
+									</div>
+
+									<!-- address -->
+									<div class="form-group">
+										<label for="address">Address</label>
+										<!-- street address 1 -->
+										<input type="text" class="form-control" name="street-address" id="street-address" placeholder="Street Address">
+										<!-- street address 2 -->
+										<input type="text" class="form-control" name="street-address-2" id="street-address-2" placeholder="Street Address 2">
+										
+										<div class="row">
+											<div class="col-md-6">
+												<!-- city -->
+												<input type="text" class="form-control" name="city" id="city" placeholder="City">
+											</div>
+											<div class="col-md-6">
+												<!-- Province/State -->
+												<input type="text" class="form-control" name="province" id="province" placeholder="State/Province">
+											</div>
+										</div>
+
+										
+
+										<!-- Postal/Zip -->
+										<input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="Postal/Zip Code">
+
+									</div>
+
+									<!-- student email -->
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input type="email" class="form-control" name="email" id="email">
+									</div>
+
+									<!-- contact number -->
+									<div class="form-group">
+										<label for="contact-number">Contact Number</label>
+										<input type="text" class="form-control" name="contact-number" id="contact-number">
+									</div>
+
+									<!-- courses -->
+									<div class="form-group">
+										<label for="courses">Courses</label>
+										<input type="text" class="form-control" name="courses" id="courses">
+									</div>
+
+									<!-- additional comments -->
+									<div class="form-group">
+										<label for="additional-comments">Additional Comments</label>
+										<input type="text" class="form-control" name="additional-comments" id="additional-comments">
+									</div>
+
+									<button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+								
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>	
+
+				<!-- tab panel for management -->
+				<div class="tab-pane" id="management">
+					<div class="page-header">
+						<h1>Management <small>MAINTAIN</small></h1>
+					</div>
+
+					<ul class="nav nav-tabs nav-pills nav-justified">
+						<li role="presentation" class="active"><a href="#ins-view" data-toggle="tab">Instructor</a></li>
+						<li role="presentation"><a href="#crs-view" data-toggle="tab">Course</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<!-- instructor -->
+						<div class="tab-pane active" id="ins-view">
+							<table class="table  table-hover">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>First Name</th>
+										<th>Last Name</th>
+										<th>Teaching Level</th>
+										<th>Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>001</td>
+										<td>Mark</td>
+										<td>Hansel</td>
+										<td>6</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+									<tr>
+										<td>001</td>
+										<td>Mark</td>
+										<td>Hansel</td>
+										<td>6</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+									<tr>
+										<td>001</td>
+										<td>Mark</td>
+										<td>Hansel</td>
+										<td>6</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+									<tr>
+										<td>001</td>
+										<td>Mark</td>
+										<td>Hansel</td>
+										<td>6</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+						<div class="tab-pane" id="crs-view">
+							<table class="table  table-hover">
+								<thead>
+									<tr>
+										<th>Course ID</th>
+										<th>Name</th>
+										<th>Level</th>
+										<th>Module Amount</th>
+										<th>Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2003</td>
+										<td><a href="#">CS Intro to Computing</a></td>
+										<td>05</td>
+										<td>6</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+									<tr>
+										<td>2003</td>
+										<td><a href="#">CS Intro to Computing</a></td>
+										<td>05</td>
+										<td>6</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+									<tr>
+										<td>2003</td>
+										<td><a href="#">CS Intro to Computing</a></td>
+										<td>05</td>
+										<td>6</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+									<tr>
+										<td>2003</td>
+										<td><a href="#">CS Intro to Computing</a></td>
+										<td>05</td>
+										<td>6</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+									<tr>
+										<td>2003</td>
+										<td><a href="#">CS Intro to Computing</a></td>
+										<td>05</td>
+										<td>6</td>
+										<td><button type="button" class="btn btn-danger btn-xs">Delete</button> <button type="button" class="btn btn-warning btn-xs">Update</button></td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+
+				</div>		
+
+				<!-- tab panel for services -->
+				<div class="tab-pane" id="services">
+					<div class="page-header">
+						<h1>Service <small>MAINTAIN</small></h1>
+					</div>
+					<ul class="nav nav-pills nav-justified">
+						<li class="active"><a href="#">View</a></li>
+						<li><a href="#">Create</a></li>
+						<li><a href="#">Update</a></li>
+						<li><a href="#">Delete</a></li>
+					</ul>
+				</div>	
+
+
+				<!-- tab panel for courses -->
+				<div class="tab-pane" id="course">
+					<div class="page-header">
+						<h1>Courses <small>CRUD</small></h1>
+					</div>
+					<ul class="nav nav-pills nav-justified">
+						<li class="active"><a href="#">View</a></li>
+						<li><a href="#">Create</a></li>
+						<li><a href="#">Update</a></li>
+						<li><a href="#">Delete</a></li>
+					</ul>
+				</div>	
+
+				<!-- tab panel for setting -->
+				<div class="tab-pane" id="setting">
+					<div class="page-header">
+						<h1>Setting <small>EDIT</small></h1>
+					</div>
+					<ul class="nav nav-pills nav-justified">
+						<li class="active"><a href="#">View</a></li>
+						<li><a href="#">Create</a></li>
+						<li><a href="#">Update</a></li>
+						<li><a href="#">Delete</a></li>
+					</ul>
+				</div>	
+
+			</div>
+
+
+
 		</div>
 	</div>
 
