@@ -1,2 +1,2 @@
-# gp_y2_2018
-This is the repository of group project for year 2
+Repo for 2018 Group Project. NAMI
+
